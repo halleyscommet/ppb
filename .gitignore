@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Environment variables
+.env
+
+# Virtual environments
+.venv
+
+# User data
+data/
+
+# Tokens
+tokens.json
+
+# Compiled CLI file
+**/put
