@@ -13,6 +13,11 @@ echo "Port: $PORT"
 echo "Workers: $WORKERS"
 echo "Log Level: $LOG_LEVEL"
 
+# Activate virtual environment
+if [ -d ".venv" ]; then
+    source .venv/bin/activate
+fi
+
 # Check if tokens.json exists
 if [ ! -f "tokens.json" ]; then
     echo "Warning: tokens.json not found, creating with empty array"
