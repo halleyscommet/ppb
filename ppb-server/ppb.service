@@ -1,5 +1,5 @@
 [Unit]
-Description=PPB Pastebin Server
+Description=PPB Server
 After=network.target
 
 [Service]
