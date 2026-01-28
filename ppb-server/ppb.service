@@ -8,8 +8,9 @@ User=ppb
 Group=ppb
 WorkingDirectory=/opt/ppb/ppb-server
 Environment="PATH=/opt/ppb/ppb-server/.venv/bin:/usr/local/bin:/usr/bin:/bin"
+EnvironmentFile=-/opt/ppb/ppb-server/.env
 ExecStart=/opt/ppb/ppb-server/start.sh
-Restart=always
+Restart=on-failure
 RestartSec=10
 
 # Security settings
